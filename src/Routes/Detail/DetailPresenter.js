@@ -68,6 +68,11 @@ const OverView = styled.p`
   width:50%;
 `;
 
+const Video = styled.div`
+  margin-top: 23px;
+  height: 70%;
+  width: 70%;
+`;
 
 
 const DetailPresenter = ({ result, loading }) =>
@@ -119,6 +124,10 @@ const DetailPresenter = ({ result, loading }) =>
           <OverView>
             {result.overview}
           </OverView>
+          <Video>
+          <iframe width="100%" height="100%" src={`https://www.youtube.com/embed/${result.videos.results[0].key}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+          </Video>
         </Data>
       </Content> 
     </Container>
