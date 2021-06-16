@@ -18,7 +18,7 @@ const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) =>
     <Container>
         <HelmetProvider>
           <Helmet>
-            <title>Movies | Nomflix</title>
+            <title>Movies | Nemflix</title>
           </Helmet>
         </HelmetProvider>
       {nowPlaying && nowPlaying.length > 0 && (
